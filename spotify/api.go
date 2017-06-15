@@ -18,7 +18,7 @@ func makeSearchRequest(options SearchOptions) (*http.Request, error) {
 		return nil, err
 	}
 	
-	req.Header.Add("Authorization", "Bearer " + authKey)
+	req.Header.Add("Authorization", "Bearer " + "BQCdOEIuJuc8EDAkRCDTD8OdMIcz3j4gPirXs6jkkD")
 	params := req.URL.Query()
 	params.Add("query", options.Query)
 	params.Add("type", options.Type)
