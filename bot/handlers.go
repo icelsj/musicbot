@@ -159,6 +159,7 @@ func Play(bot *Bot, match *Match) {
 	if err != nil {
 		fmt.Println(err)
 		bot.Say("_Spotify search failed_")
+		bot.Say(err)
 		return
 	}
 
